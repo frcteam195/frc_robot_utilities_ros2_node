@@ -25,6 +25,8 @@
 #include <ck_ros2_msgs_node/msg/hmi_signals.hpp>
 #include <ck_ros2_base_msgs_node/msg/robot_status.hpp>
 
+#include <ck_utilities_ros2_node/node_handle.hpp>
+
 BufferedROSMsgHandler<ck_ros2_msgs_node::msg::HMISignals> hmi_updates;
 BufferedROSMsgHandler<ck_ros2_base_msgs_node::msg::RobotStatus> robot_updates_internal;
 RobotStatusHelper robot_status(robot_updates_internal);
